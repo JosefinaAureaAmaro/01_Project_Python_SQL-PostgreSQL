@@ -51,7 +51,8 @@ then we felt that summary data by candidate would be easily aggregated through a
 *Challenges*: Due to the large data for contributions regarding the Hillary Clinton candidate, it became my objective to find an 
 efficient way to iterate through the csv files. I tried a few methods to complete this task, however the final order was such:
    1. Create a dictionary with the keys numbered chronologically starting at 0. Then for the values to contain the name of df used when 
-   the csvs were read using pd.read_csv()
+   the csvs were read using pd.read_csv(). 
+   
    *A 'dictionary' was used because dictionaries maintain the 'type' of the value, which was imperative for iterating through the data 
    itself, rather than the file name.*
    
