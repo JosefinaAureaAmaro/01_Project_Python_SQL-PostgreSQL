@@ -52,13 +52,16 @@ then we felt that summary data by candidate would be easily aggregated through a
 efficient way to iterate through the csv files. I tried a few methods to complete this task, however the final order was such:
    1. Create a dictionary with the keys numbered chronologically starting at 0. Then for the values to contain the name of df used when 
    the csvs were read using pd.read_csv()
-   * A 'dictionary' was used because dictionaries maintain the 'type' of the value, which was imperative for iterating through the data 
-   itself, rather than the file name. *
+   *A 'dictionary' was used because dictionaries maintain the 'type' of the value, which was imperative for iterating through the data 
+   itself, rather than the file name.*
+   
    2. I had the keys numbered chronologically because I also wanted to provide the developer feedback on which dataframe was being 
    concatenated for debugging. Thus I created a list that mirrored the chronological order of the dictionary to be used in the 
-   iteration. The list contained the names of the dataframes which was to be printed in the order the request was being processed. 
+   iteration. The list contained the names of the dataframes which was to be printed in the order the request was being processed.
+   
    3. Lastly, in order to combine the dataframes I found that treating the data as a list and concatenating them was
    the method that worked for me. 
+   
    4. Make the list into a dataframe. When the concat function was used, I ignored the index so that the dataframe could assign its own
    index values to produce a proper new dataframe. 
    
@@ -70,8 +73,10 @@ efficient way to iterate through the csv files. I tried a few methods to complet
 **Database Type:** Relational - PostgreSQL
 
 Only two main data tables, candidate_expense and candidate_raised_funds, were needed in the PostgreSQL for the related views to be
-populated by the user. 
-* Screenshots of the database are provided for review *
+populated by the user.
+
+*Screenshots of the database are provided for review*
+
 Depending on how the user created their views from the two main tables would establish the need for updates to be made to the main 
 table, such as primary keys etc. 
 
