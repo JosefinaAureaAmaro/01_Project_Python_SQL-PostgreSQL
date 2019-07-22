@@ -8,7 +8,7 @@ Our hope is that this resulting database can be used for quickly finding and vis
 
 ## Data Analysis and Cleaning
 
-**Data Source:** [Fec.gov] (https://www.fec.gov/data/)
+**Data Source:** https://www.fec.gov/data/
 
 **Data Transform techniques used:**
 Contribution Data
