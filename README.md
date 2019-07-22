@@ -8,14 +8,15 @@ Our hope is that this resulting database can be used for quickly finding and vis
 
 ## Data Analysis and Cleaning
 
-Data Source: https://www.fec.gov/data/
-Data Transform techniques used:
+**Data Source:** [Fec.gov] (https://www.fec.gov/data/)
+
+**Data Transform techniques used:**
 Contribution Data
  1. Filtering 
  2. Aggregating
 
 Expense Data
 
-Database Type: Relational - PostgreSQL
+**Database Type:** Relational - PostgreSQL
 
 An ERD Diagram is provided to review source data tables and examples of final tables that can be reviewed from the database. 
